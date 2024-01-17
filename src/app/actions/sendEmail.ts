@@ -29,7 +29,8 @@ export const sendEmail = async (formData: FormData) => {
             to: 'sofiaycgz@gmail.com',
             subject: 'Message from Sofia Portfolio',
             reply_to: senderEmail as string,
-            text: message as string,
+            // text: message as string,
+            // react: 
         })
     } catch (error: unknown) {
         return {
