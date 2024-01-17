@@ -44,7 +44,7 @@ export default function Contact() {
                     name='message'
                     placeholder='Your message...'
                     required
-                    maxLength={500}
+                    maxLength={5000}
                 />
                 <button
                     type='submit'
