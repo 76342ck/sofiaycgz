@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { CiDatabase } from "react-icons/ci";
+import { AiOutlineStock } from "react-icons/ai";
 import subImg from "/public/subreefofficial.png"
 import ssnImg from "/public/SSNWorkflow.png";
 import connect4Img from "/public/Connect4.jpeg";
@@ -36,28 +36,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Ecommerce Marketing Manager",
+    location: "Guangzhou, China",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Managed multiple online market platforms while overseeing the maintenance and management of websites, mobile applications, and critical infrastructure essential for enabling online retail and wholesale transactions (both overseas and in Asia). Increased total market share of professional medical beauty equipment by 55% in total.",
+    icon: React.createElement(AiOutlineStock),
+    date: "2020 - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Barista - Mr. Wish",
+    location: "Philadelphia, PA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Worked part time making bubble tea while attending Temple University.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2012 - 2019",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Assitant @ Getson & Schatz, P.C.",
+    location: "Philadelphia, PA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Worked as assitant in a law firm. Answered calls and data entry.",
+    icon: React.createElement(CiDatabase),
+    date: "2013",
   },
 ] as const;
 
