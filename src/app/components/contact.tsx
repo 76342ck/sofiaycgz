@@ -8,6 +8,7 @@ import { useSectionInView } from '../lib/hooks'
 import { sendEmail } from '../actions/sendEmail'
 import { useFormStatus } from "react-dom"
 import SubmitBtn from './submit-btn'
+import toast from 'react-hot-toast'
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact");
@@ -32,7 +33,14 @@ export default function Contact() {
             </p>
 
             <form className='mt-10 flex flex-col' action={async (FormData) => {
-                await sendEmail(FormData)
+                const { data, error } = await sendEmail(FormData)
+                
+                if (error) {
+                    toast.error(error)
+                    return
+                }
+
+                toast.success('Email sent successfully!')
             }}>
                 <input
                     className='h-14 px-4 rounded-lg borderBlack'
