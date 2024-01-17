@@ -8,9 +8,14 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from 'react-icons/fa'
 import { useSectionInView } from '../lib/hooks'
+import { useActiveSectionContext } from '../context/active-section-context'
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5)
+    const {
+        setActiveSection,
+        setTimeOfLastClick,
+    } = useActiveSectionContext()
 
     return (
         <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
@@ -86,16 +91,20 @@ export default function Intro() {
                     outline-none focus-scale-105 hover:scale-105
                     hover:bg-gray-950 dark:hover:text-[#fbe2e3] 
                     active:scale-100 transition cursor-cell'
+                    onClick={() => {
+                        setActiveSection("Contact")
+                        setTimeOfLastClick(Date.now())
+                    }}
                 >
                     Contact me here
-                    <BsArrowRight classname="opacity-70 group-hover:translate-x-1 transition" />
+                    <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
                 <a className='bg-white px-6 py-3 flex items-center 
                 gap-2 rounded-full outline-none focus-scale-105 hover:scale-105
                 hover:bg-gray-950 hover:text-white dark:hover:text-[#fbe2e3] 
                 active:scale-100 transition cursor-cell' href="/CV.pdf" download>
                     Download CV
-                    <HiDownload classname='opacity-60 group-hover:translate-y-1 transition'/>
+                    <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/>
                 </a>
                 <a className='bg-white p-4 text-gray-700 flex items-center 
                 gap-2 rounded-full outline-none focus-scale-105 hover:scale-105
