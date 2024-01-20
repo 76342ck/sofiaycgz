@@ -20,11 +20,11 @@ export default function SubmitBtn() {
                     border-b-2 border-white'></div>
                 ) : (
                     <>
-                        Submit&nbsp
+                        Submit{"  "}
                         <FaPaperPlane
                             className='text-xs opacity-70 transition-all
                         group-hover:translate-x-1 group-hover:-translate-y-1'
-                        />&nbsp
+                        />{"  "}
                     </>
                 )
             }
