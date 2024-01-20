@@ -69,12 +69,13 @@ export default function Intro() {
                     ease: [0, 0.71, 0.2, 1.01],
                 }}
             >
-                I am a
-                <span className='font-bold'> full-stack developer</span> with
-                <span className='font-bold'> 4 years</span> of experience. 
-                <br></br>I enjoy building {"  "}
-                <span className='italic'>sites & apps</span>. My focus is {"  "}
-                <span className='underline'>React (Next.js)</span>.
+                I am a graduate with a Bachelor's Degree in 
+                <span className='font-bold'> Information Science & Technology</span> at
+                <span className='font-bold'> Temple University</span>. 
+                <br></br>I enjoy building responsive{"  "}
+                <span className='italic'>websites & applications</span>. My focus is {"  "}
+                <span className='underline'>React (Next.js)</span>. <br></br> I am fluent in 
+                <span className='italic'> English, Spanish, & Chinese (Mandarin)</span>.
             </motion.p>
 
             <motion.div className='flex flex-col sm:flex-row items-center 
@@ -118,7 +119,7 @@ export default function Intro() {
                 gap-2 text-[0.9rem] rounded-full outline-none focus-scale-105 hover:scale-105
                 hover:bg-gray-950 dark:hover:text-[#fbe2e3] hover:text-white
                 active:scale-100 transition cursor-cell'
-                href='https://github.com' target='_blank'>
+                href='https://github.com/76342ck' target='_blank'>
                     <FaGithubSquare />
                 </a>
             </motion.div>
