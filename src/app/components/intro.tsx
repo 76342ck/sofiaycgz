@@ -72,8 +72,8 @@ export default function Intro() {
                 I am a graduate with a Bachelor's Degree in 
                 <span className='font-bold'> Information Science & Technology</span> at
                 <span className='font-bold'> Temple University</span>. 
-                <br></br>I enjoy building responsive{"  "}
-                <span className='italic'>websites & applications</span>. My focus is {"  "}
+                <br></br>I enjoy building responsive&nbsp
+                <span className='italic'>websites & applications</span>. My focus is &nbsp
                 <span className='underline'>React (Next.js)</span>. <br></br> I am fluent in 
                 <span className='italic'> English, Spanish, & Chinese (Mandarin)</span>.
             </motion.p>
