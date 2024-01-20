@@ -69,7 +69,7 @@ export default function Intro() {
                     ease: [0, 0.71, 0.2, 1.01],
                 }}
             >
-                I am a graduate with a Bachelor's Degree in 
+                I am a graduate with a Bachelor&apos;s Degree in 
                 <span className='font-bold'> Information Science & Technology</span> at
                 <span className='font-bold'> Temple University</span>. 
                 <br></br>I enjoy building responsive&nbsp
