@@ -104,8 +104,8 @@ export default function Intro() {
                 <a className='bg-white px-6 py-3 flex items-center 
                 gap-2 rounded-full outline-none focus-scale-105 hover:scale-105
                 hover:bg-gray-950 hover:text-white dark:hover:text-[#fbe2e3] 
-                active:scale-100 transition cursor-cell' href="/CV.pdf" download>
-                    Download CV
+                active:scale-100 transition cursor-cell' href="/resume_SC24.pdf" download>
+                    Resume
                     <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/>
                 </a>
                 <a className='bg-white p-4 text-gray-700 flex items-center 
