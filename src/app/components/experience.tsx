@@ -1,15 +1,16 @@
 "use client"
 
-import React, { useContext } from 'react'
+import React from 'react'
 import SectionHeading from './section-heading'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import { experiencesData } from '../lib/data'
 import { useSectionInView } from '../lib/hooks'
 import { useTheme } from '../context/theme-context'
+import { InView, useInView } from 'react-intersection-observer'
 
 export default function Experience() {
-    const { ref } = useSectionInView("Experience");
+    const { ref, inView } = useSectionInView("Experience", 0.3);
     const { theme } = useTheme();
 
     return (
@@ -19,7 +20,7 @@ export default function Experience() {
                 {experiencesData.map((item, index) => (
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
-                            visible={true}
+                            visible={inView}
                             contentStyle={{
                                 background: 
                                     theme === "light" ? "#f3f4f6" : "rgba(0, 0, 0, 0.05)",
