@@ -32,11 +32,12 @@ export default function Intro() {
                         }}
                     >
                         <Image
-                            src="https://i.imgur.com/hTjZNzM.png"
+                            src="https://i.imgur.com/B2sbT1J.png"
                             alt='Portrait'
                             width="200"
                             height="200"
-                            quality="95"
+                            quality="100"
+                            objectFit='fill'
                             priority={true}
                             className='h-24 w-24 rounded-full object-cover 
                             border-[0.35rem] border-white shadow-xl
