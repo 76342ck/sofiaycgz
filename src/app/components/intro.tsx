@@ -32,8 +32,8 @@ export default function Intro() {
                         }}
                     >
                         <Image
-                            src="https://i.imgur.com/Gg2TdNd.png"
-                            alt='Peach Portrait'
+                            src="https://i.imgur.com/hTjZNzM.png"
+                            alt='Portrait'
                             width="200"
                             height="200"
                             quality="95"
