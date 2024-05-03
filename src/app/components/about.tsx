@@ -33,9 +33,7 @@ export default function About() {
                 I have honed my skills in bringing ideas to life through technology.
                 <br /><br />
                 Constantly embracing innovation, I thrive on learning new technologies
-                and techniques to elevate creative platforms. Now, on the lookout for a {"  "}
-                <span className='font-medium'>full-time position</span> {"  "} in the dynamic world of tech,
-                I bring a blend of experience and a hunger for continuous growth.
+                and techniques to elevate creative platforms.
             </p>
             <p>
                 <span className='italic'>Beyond the screen</span>,
