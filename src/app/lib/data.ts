@@ -36,10 +36,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Ecommerce Marketing Manager",
+    title: "Operations Manager - Alibaba",
     location: "Guangzhou, China",
     description:
-      "Managed multiple online market platforms while overseeing the maintenance and management of websites, mobile applications, and critical infrastructure essential for enabling online retail and wholesale transactions (both overseas and in Asia). Increased total market share of professional medical beauty equipment by 55% in total.",
+      "Managed multiple e-commerce platforms while overseeing the maintenance and management of websites, mobile applications, and critical infrastructure essential for enabling online retail and wholesale transactions (both overseas and in Asia). Increased total market share of professional medical beauty equipment by 55% in total.",
     icon: React.createElement(AiOutlineStock),
     date: "2020 - 2023",
   },
