@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { projectsData } from '../lib/data'
 import Image from 'next/image'
 import { useScroll, useTransform } from 'framer-motion'
@@ -16,6 +16,12 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
     })
     const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1])
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1])
+
+    const [enlarged, setEnlarged] = useState(false)
+
+    const toggleEnlarged = () => {
+        setEnlarged(!enlarged)
+    }
 
     return (
         <motion.section 
@@ -46,10 +52,38 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
                 src={imageUrl}
                 alt={title}
                 quality={95}
+                onClick={toggleEnlarged}
                 className='absolute top-12 -right-40 w-[28.25rem]
                 rounded-t-lg shadow-2xl transition hover:translate-x-3
                 hover:translate-y-3 hover:rotate-2 hover:scale-[1.1]'
             />
+
+            {enlarged && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                    onClick={toggleEnlarged}
+                    className="fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-75 flex justify-center items-center"
+                >
+                    <motion.div
+                        initial={{ scale: 0.8 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 0.3 }}
+                        className="relative w-full h-full"
+                        style={{ maxWidth: "100vw", maxHeight: "100vh" }}
+                    >
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                            className="absolute top-0 left-0 w-full h-full flex justify-center items-center"
+                        >
+                            <Image src={imageUrl} alt={title} layout="fill" objectFit="contain" />
+                        </motion.div>
+                    </motion.div>
+                </motion.div>
+            )}
         </motion.section>
     )
 }
