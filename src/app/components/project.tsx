@@ -14,8 +14,9 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         target: ref,
         offset: ["0 1", "1.33 1"],
     })
-    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1])
-    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1])
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1])
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1])
+    const transitionDuration = 0.5; // Increase transition duration for smoother animations
 
     const [enlarged, setEnlarged] = useState(false)
 
@@ -29,6 +30,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         style={{
             scale: scaleProgress,
             opacity: opacityProgress,
+            transitionDuration: `${transitionDuration}s` // Apply transition duration
         }}
         className='bg-gray-100 max-w-[42rem] border rounded-lg
         border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]
