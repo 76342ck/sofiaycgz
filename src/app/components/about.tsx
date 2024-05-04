@@ -38,7 +38,7 @@ export default function About() {
             <p>
                 <span className='italic'>Beyond the screen</span>,
                 I find joy in playing mobile games, immersing myself
-                in fiction, and exploring the latest trends online. Committed to
+                in fiction novels, and exploring the latest trends online. Committed to
                 broadening my skill set, I am currently delving into the realm of Animation
                 and expanding my linguistic horizons through Duolingo. Coding is not just
                 a career for me—it is a lifestyle that fuels my curiosity and commitment
