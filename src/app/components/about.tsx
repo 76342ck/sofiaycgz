@@ -27,7 +27,7 @@ export default function About() {
                 and since then, I have marveled at the creative power of coding to
                 craft visually appealing websites. From the early days of experimenting
                 with Bootstrap to diving into the intricacies of {"  "}
-                <span className='font-medium'>React</span>, {"  "}
+                <span className='font-medium'>React.js</span>, {"  "}
                 <span className='font-medium'>Node.js</span>, {"  "}
                 and <span className='font-medium'>CSS</span>, {"  "}
                 I have honed my skills in bringing ideas to life through technology.
@@ -39,8 +39,8 @@ export default function About() {
                 <span className='italic'>Beyond the screen</span>,
                 I find joy in playing mobile games, immersing myself
                 in fiction novels, and exploring the latest trends online. Committed to
-                broadening my skill set, I am currently delving into the realm of Animation
-                and expanding my linguistic horizons through Duolingo. Coding is not just
+                broadening my skill set, I am currently delving into the realm of animation
+                and transitions while expanding my linguistic horizons through Duolingo. Coding is not just
                 a career for me—it is a lifestyle that fuels my curiosity and commitment
                 to staying at the forefront of technological evolution.
                 
